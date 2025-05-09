@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: rgb(199, 199, 199);
+        margin-top: 40px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="my-balance">
+        <p class="small-title-white">My balance</p>
+        <p class="balance">$921.48</p>
+      </section>
+
+      <section class="spending">
+        <h1>Spending - Last 7 days</h1>
+
+        <div class="chart-wrapper">
+          <div class="bar-chart">
+            <div class="hover-chip">$52.36</div>
+            <div class="red-chart" id="bar-mon"></div>
+            <small>mon</small>
+          </div>
+
+          <div class="bar-chart">
+            <div class="hover-chip">$52.36</div>
+            <div class="red-chart" id="bar-tue"></div>
+            <small>tue</small>
+          </div>
+          <div class="bar-chart">
+            <div class="hover-chip">$52.36</div>
+            <div id="bar-wed"></div>
+            <small>wed</small>
+          </div>
+          <div class="bar-chart">
+            <div class="hover-chip">$52.36</div>
+            <div class="red-chart" id="bar-thu"></div>
+            <small>thu</small>
+          </div>
+          <div class="bar-chart">
+            <div class="hover-chip">$52.36</div>
+            <div class="red-chart" id="bar-fri"></div>
+            <small>fri</small>
+          </div>
+          <div class="bar-chart">
+            <div class="hover-chip">$52.36</div>
+            <div class="red-chart" id="bar-sat"></div>
+            <small>sat</small>
+          </div>
+          <div class="bar-chart">
+            <div class="hover-chip">$52.36</div>
+            <div class="red-chart" id="bar-sun"></div>
+            <small>sun</small>
+          </div>
+        </div>
+
+        <div class="total-wrapper">
+          <div class="title-total">
+            <p class="small-title-gray">Total this month</p>
+            <p class="total">$478.33</p>
+          </div>
+
+          <div class="move-small">
+            <p class="movement">+2.4%</p>
+            <p class="small-title-gray">from last month</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by KA.
+      </footer>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
